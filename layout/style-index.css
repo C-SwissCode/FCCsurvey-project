@@ -62,3 +62,14 @@ header {
 .check-labels {
   margin: 0 15rem 0 0;
 }
+
+#buttons {
+  align-self: center;
+}
+
+button {
+  font-family: "Turret Road";
+  font-size: 1.1rem;
+  margin: 2em 1em 0 1em;
+  padding: 0.25em 1em 0.25em 1em;
+}
