@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Survey Form Project</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Caleb Smith">
+  <meta name="description" content="Survey Form project with data validation">
+  <link rel="stylesheet" type="text/css" href="style-index.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Turret+Road&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1 id="title">Submit Survey Form</h1>
+      <p id="subhead">Make the world a better place by submitting this form...</p>
+    </header>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" placeholder="First Last" required>
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" placeholder="example@domain.com" required>
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number" min="13" max="125">
+      <label id=dropdown-label for="dropdown">Select your developer expertise level:</label>
+      <select id="dropdown">
+        <option value="" disabled selected>Choose developer level</option>
+        <option value="beginner">No Experience</option>
+        <option value="novice">Basic Programming Knowledge</option>
+        <option value="jr">Jr Developer</option>
+        <option value="sr">Senior Developer</option>
+      </select>
+      <fieldset id="radios">
+        <legend>What type of developer are you?</legend>
+        <input id="front" type="radio" value="frontend" name="developer-kind">
+        <label id="front-label" for="front">Front-End</label>
+        <input id="back" type="radio" value="backend" name="developer-kind">
+        <label id="back-label" for="back">Back-End</label>
+        <input id="full" type="radio" value="fullstack" name="developer-kind">
+        <label id="full-label" for="full">Full-Stack</label>
+      </fieldset>
+      <label id="droplength-label" for="droplength">How log will it take you to become a developer?</label>
+      <select id="droplength">
+        <option value="" disabled selected>Choose length of time</option>
+        <option value="1">1 Month</option>
+        <option value="2">2 Months</option>
+        <option value="3">3 Months</option>
+        <option value="4">4 Months</option>
+        <option value="5">5 Months</option>
+        <option value="6">6 Months</option>
+      </select>
+      <div id="checkboxes">
+        <p id="check-description">What technolodies are you proficient with?</p>
+        <input id="js" type="checkbox" value="javascript" name="technologies">
+        <label for="js" id="js-label">Javascript</label>
+        <input id="css" type="checkbox" value="css" name="technologies">
+        <label for="css" id="css-label">CSS</label>
+        <input id="react" type="checkbox" value="react" name="technologies">
+        <label for="react" id="react-label">React</label>
+        <input id="nodejs" type="checkbox" value="nodejs" name="technologies">
+        <label for="nodejs" id="nodejs-label">Node.js</label>
+        <input id="html" type="checkbox" value="html" name="technologies" checked>
+        <label for="html" id="html-label">HTML5</label>
+      </div>
+      <p id="about-you-label">Tell us more about you (optional):</p>
+      <textarea id="text-area" rows="6" cols="35" maxlength="125"
+        placeholder="Enter private life details..."></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+
+  </main>
+</body>
+
+</html>
