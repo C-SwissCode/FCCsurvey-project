@@ -18,11 +18,11 @@
     </header>
     <form id="survey-form">
       <label id="name-label" for="name">Name:</label>
-      <input id="name" type="text" placeholder="First Last" required>
+      <input class="input-fields" id="name" type="text" placeholder="First Last" required>
       <label id="email-label" for="email">Email:</label>
-      <input id="email" type="email" placeholder="example@domain.com" required>
+      <input class="input-fields" id="email" type="email" placeholder="example@domain.com" required>
       <label id="number-label" for="number">Age</label>
-      <input id="number" type="number" min="13" max="125">
+      <input class="input-fields" id="number" type="number" min="13" max="125">
       <label id=dropdown-label for="dropdown">Select your developer expertise level:</label>
       <select id="dropdown">
         <option value="" disabled selected>Choose developer level</option>
@@ -33,12 +33,12 @@
       </select>
       <fieldset id="radios">
         <legend>What type of developer are you?</legend>
-        <input id="front" type="radio" value="frontend" name="developer-kind">
-        <label id="front-label" for="front">Front-End</label>
-        <input id="back" type="radio" value="backend" name="developer-kind">
-        <label id="back-label" for="back">Back-End</label>
-        <input id="full" type="radio" value="fullstack" name="developer-kind">
-        <label id="full-label" for="full">Full-Stack</label>
+        <input class="input-fields" id="front" type="radio" value="frontend" name="developer-kind">
+        <label class="radio-labels" id="front-label" for="front">Front-End</label>
+        <input class="input-fields" id="back" type="radio" value="backend" name="developer-kind">
+        <label class="radio-labels" id="back-label" for="back">Back-End</label>
+        <input class="input-fields" id="full" type="radio" value="fullstack" name="developer-kind">
+        <label class="radio-labels" id="full-label" for="full">Full-Stack</label>
       </fieldset>
       <label id="droplength-label" for="droplength">How log will it take you to become a developer?</label>
       <select id="droplength">
@@ -50,18 +50,18 @@
         <option value="5">5 Months</option>
         <option value="6">6 Months</option>
       </select>
-      <div id="checkboxes">
+      <div id="checkbox-group">
         <p id="check-description">What technolodies are you proficient with?</p>
-        <input id="js" type="checkbox" value="javascript" name="technologies">
-        <label for="js" id="js-label">Javascript</label>
-        <input id="css" type="checkbox" value="css" name="technologies">
-        <label for="css" id="css-label">CSS</label>
-        <input id="react" type="checkbox" value="react" name="technologies">
-        <label for="react" id="react-label">React</label>
-        <input id="nodejs" type="checkbox" value="nodejs" name="technologies">
-        <label for="nodejs" id="nodejs-label">Node.js</label>
-        <input id="html" type="checkbox" value="html" name="technologies" checked>
-        <label for="html" id="html-label">HTML5</label>
+        <input class="input-fields" id="js" type="checkbox" value="javascript" name="technologies">
+        <label class="check-labels" for="js" id="js-label">Javascript</label>
+        <input class="input-fields" id="css" type="checkbox" value="css" name="technologies">
+        <label class="check-labels" for="css" id="css-label">CSS</label>
+        <input class="input-fields" id="react" type="checkbox" value="react" name="technologies">
+        <label class="check-labels" for="react" id="react-label">React</label>
+        <input class="input-fields" id="nodejs" type="checkbox" value="nodejs" name="technologies">
+        <label class="check-labels" for="nodejs" id="nodejs-label">Node.js</label>
+        <input class="input-fields" id="html" type="checkbox" value="html" name="technologies" checked>
+        <label class="check-labels" for="html" id="html-label">HTML5</label>
       </div>
       <p id="about-you-label">Tell us more about you (optional):</p>
       <textarea id="text-area" rows="6" cols="35" maxlength="125"

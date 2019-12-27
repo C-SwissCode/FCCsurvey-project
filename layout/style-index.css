@@ -30,6 +30,35 @@ header {
   justify-content: space-evenly;
   /* align-items: flex-start; */
   border-style: solid;
-  padding: 1.5rem;
-  flex-basis: 80vh;
+  padding: 1.25rem;
+  flex-basis: 50rem;
+}
+
+.input-fields {
+  font-size: 1.1rem;
+}
+
+[type="radio"] {
+  margin: 0 15px 7px 0;
+  /* width: 25px; */
+}
+
+#radios {
+  width: 300px;
+}
+
+.radio-labels {
+  margin: 0 10rem 0 0;
+}
+
+#checkbox-group {
+  width: 400px;
+}
+
+[name="technologies"] {
+  margin: 0 15px 7px 2rem;
+}
+
+.check-labels {
+  margin: 0 15rem 0 0;
 }
