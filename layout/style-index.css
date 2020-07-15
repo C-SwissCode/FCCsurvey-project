@@ -8,7 +8,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 header {
@@ -37,7 +37,8 @@ header {
   justify-content: space-evenly;
   border-style: solid;
   padding: 1rem 1.25rem 1.25rem 0.5rem;
-  flex-basis: 62rem;
+  /* flex-basis: 62rem; this also works, needed to make form height big enough to evenly space out the items within the form. Just setting height property to the same measurement also acomplishes the job here*/
+  height: 62rem;
 }
 
 .input-fields {
